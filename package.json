@@ -1,0 +1,12 @@
+{
+  "name": "rogue-dungeon",
+  "version": "1.0.0",
+  "description": "ASCII Rogue-lite dungeon crawler in the terminal (Node.js + Blessed)",
+  "main": "src/game.js",
+  "scripts": {
+    "start": "node src/game.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81"
+  }
+}
