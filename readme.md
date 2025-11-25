@@ -1,178 +1,115 @@
-🧙‍♂️ Rogue Dungeon — ASCII Rogue-Lite in the Terminal
-======================================================
+🧙‍♂️ Rogue Dungeon
+A Fast, Procedurally Generated Rogue-Lite That Runs in Your Terminal.
+A polished CLI game built to demonstrate engineering clarity, systems thinking, and real-time UI design.
+🚀 Why This Project Exists
+Rogue Dungeon isn’t “just another terminal game.”
+It’s a demonstration of:
+Real-time terminal UI engineering
+Complex state management
+Procedural map generation
+Turn-based combat systems
+Animation inside a CLI
+Architecture thinking & clean code design
+The goal was simple:
+Build something fun, technical, and uniquely impressive to recruiters.
+Something more than just CRUD apps.
+This game is the result.
+🎯 What Makes It Stand Out
+❇️ Procedural dungeon generator
+Every run produces a new map using a controlled random-walk algorithm.
+❇️ Reactive ASCII interface
+Built using Blessed → interactive panels, borders, HP bar, enemies list, log feed.
+❇️ Turn-based combat with micro-animations
+Cells flash on hit, enemies chase intelligently, combat feels alive.
+❇️ Enemy AI (simple but effective)
+Goblins:
+Chase the player using Manhattan distance
+Attack when adjacent
+Wander if unaware
+❇️ Clean architecture & modularity
+Separated into:
+dungeon.js → world generation
+game.js → engine, UI, combat logic
+This shows deliberate design choices — something recruiters love.
+🖼️ Game Preview (ASCII)
+###############################
+#@....g...$.......###.........#
+#.....###.....G...............#
+#...T.....E....................#
+###############################
 
-_A procedurally generated dungeon crawler built with Node.js + Blessed._
+ Stats:
+ HP: #########--------- (11/20)
+ ATK: 5
+ Gold: 3
 
-🚀 Overview
------------
-
-**Rogue Dungeon** is a **fully interactive terminal game** featuring:
-
-*   Procedural dungeon generation
-    
-*   Turn-based combat
-    
-*   Basic enemy AI
-    
-*   Animated attack flashes
-    
-*   Dungeon levels that get harder
-    
-*   Stats panel, log panel, and a retro ASCII interface
-    
-
-This project was built to learn:
-
-*   Real-time terminal UI using **Blessed**
-    
-*   2D grid-based game architecture
-    
-*   State machines & turn loops
-    
-*   Procedural world generation
-    
-*   Event-driven keyboard handling in Node.js
-    
-
-It’s fast, fun, and highly extensible.
-
-✨ Features
-----------
-
-### 🎲 Procedural Dungeon Generation
-
-Every run creates a brand-new map using a “random walk” algorithm.
-
-### ⚔️ Turn-Based Combat
-
-Attack enemies when adjacent — enemies chase & hit back.
-
-### 👺 Enemy AI
-
-Goblins track the player using Manhattan distance or wander randomly.
-
-### 💥 Attack Animations
-
-Cells flash with color when you or an enemy hits.
-
-### 🧭 Full Terminal UI
-
-Built using Blessed:
-
-*   Colored map
-    
-*   Side stats panel
-    
-*   Dynamic HP bar
-    
-*   Enemy list
-    
-*   Action log
-    
-
-### 📈 Level Progression
-
-Clear a floor → move to the next, where enemies grow stronger.
-
-🕹️ Gameplay Preview
---------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   ╔═══════════════════╗  ║     Dungeon 1     ║  ╚═══════════════════╝  ###########################  #@....g...$...............#  #.....###.....G...........#  #...T.....E...............#  ############################  Stats:  HP: ##########---------- (10/20)  ATK: 5  Gold: 3  Log:  You hit goblin for 3 dmg.  Goblin died.   `
-
-📦 Tech Stack
--------------
-
-*   **Node.js**
-    
-*   **Blessed** (for rendering UI)
-    
-*   Plain JavaScript (no frameworks)
-    
-*   Procedural generation
-    
-*   Event-driven architecture
-    
-
-📁 Project Structure
---------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   rogue-dungeon/  │  ├── package.json  └── src/      ├── dungeon.js   # Procedural generation      └── game.js      # UI, logic, combat, rendering   `
-
-🛠️ Installation & Setup
-------------------------
-
-### 1\. Clone the repo
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/YOUR_USERNAME/rogue-dungeon.git  cd rogue-dungeon   `
-
-### 2\. Install dependencies
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm install   `
-
-### 3\. Run the game
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm start   `
-
+ Log:
+ You hit goblin for 3 dmg.
+ Goblin died.
+🛠 Tech Stack
+Layer	Tech
+UI Rendering	Blessed (terminal UI framework)
+Game Engine	Node.js (event-driven game loop)
+Map Gen	Random Walk + grid-based algorithms
+Architecture	Modular JS, entity-driven design
+Animations	Timed cell flashes using Blessed
+This mix is rare → and very impressive for a backend engineer.
+📦 Installation
+git clone https://github.com/YOUR_USERNAME/rogue-dungeon.git
+cd rogue-dungeon
+npm install
+npm start
 🎮 Controls
------------
-
-ActionKeysMoveArrow Keys / WASD / HJKLNext floor**N**Restart after death**R**Quit**Q / Esc / Ctrl+C**
-
-🔮 Future Enhancements (Planned)
---------------------------------
-
-*   Fog of War (Field of View)
-    
-*   Items: potions, weapons, armor
-    
-*   Inventory menu & equipment
-    
-*   More enemy types (archers, trolls, mages)
-    
-*   Boss fights on milestone floors
-    
-*   Save & load system (JSON)
-    
-*   Mini-map
-    
-*   Smooth movement animations
-    
-
-🧠 What I Learned
------------------
-
-This project taught me:
-
-*   Designing interactive CLI apps
-    
-*   Managing game loops & rendering cycles
-    
-*   Modeling entities and game state
-    
-*   Procedural content generation
-    
-*   Building complex interfaces with **Blessed**
-    
-*   Writing cleaner, modular JavaScript architecture
-    
-
-🤝 Contributing
----------------
-
+Action	Keys
+Move	Arrow Keys / WASD / HJKL
+Next Level	N
+Restart	R
+Quit	Q / Esc / Ctrl+C
+🔥 Why This Project Impresses Recruiters
+Most student portfolios contain:
+❌ Simple CRUD apps
+❌ Todo lists
+❌ Portfolio websites
+❌ Basic clones
+But Rogue Dungeon shows things companies care about:
+✔ System thinking
+Managing dozens of moving parts and states.
+✔ Event loops
+Understanding how game ticks, logic, and UI work.
+✔ Data modeling
+Player, enemies, map, state, logs, rendering.
+✔ Problem-solving
+AI behavior, collision detection, procedural content.
+✔ Real-time UI
+A rare skill in web/backend engineers.
+This immediately differentiates you from other applicants.
+🧠 What I Learned Building This
+Designing interactive CLI apps
+Building my own tiny “engine loop”
+Procedural generation
+Structuring a clean modular codebase
+Real-time rendering with Blessed
+Managing user input events and game timing
+Working with 2D grids, AI, and entity systems
+These translate directly into backend + systems engineering skills.
+🔮 Planned Upgrades
+Inventory & items (potions, weapons, armor)
+Fog of war (FOV shadow-casting)
+Boss floors
+More enemy types
+Talent system (perks on level-up)
+Save/load with JSON
+Mini-map
+Tile-based lighting
+More advanced animation effects (shake, glow, pulses)
+🤝 Contribute / Fork It
+This project is intentionally modular — easy to modify, extend, or fork.
 Feel free to:
-
-*   Submit bugs
-    
-*   Suggest new mechanics
-    
-*   Open PRs
-    
-*   Add new enemies, items, or spells
-    
-
-Let’s build a full roguelike universe together ⚔️
-
+Add monsters
+Add new dungeon generators
+Improve AI
+Add weapons or magic
+Create your own version
+PRs are welcome!
 📜 License
-----------
-
-MIT License free to use, modify, and share.
+MIT — free for anyone to use or build upon.
