@@ -25,7 +25,7 @@ It’s a demonstration of:
 
 The goal was simple:
 
-> **Build something fun, technical, and uniquely impressive to recruiters.**
+> **Build something fun, technical, and uniquely impressive to practice.**
 > Something more than just CRUD apps.
 
 This game is the result.
@@ -61,7 +61,7 @@ Separated into:
 * `dungeon.js` → world generation
 * `game.js` → engine, UI, combat logic
 
-This shows deliberate design choices — something recruiters love.
+This shows deliberate design choices
 
 ---
 
